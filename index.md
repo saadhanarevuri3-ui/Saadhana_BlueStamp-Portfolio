@@ -1,12 +1,5 @@
 # Self Driving Car
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
-
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
-
+Intially I started my experience at BlueStamp by starting with a small-scale starter project called the Jitterbug, through this I learned how to feed solder, heat a joint and create solid electrical connections on a circuit board. Additionally I was exposed to different components like LEDs, switches, battery holders and a vibration motor. After gaining some experience with engineering components I began with my chosen intensive project, the self driving car, which is essentially an autonomous scale vehicle controlled by an Arduino microcontroller. It utilizes LEDs and three different sensors, the line tracker, obstacle avoidance and ultrasonic to scan its surroundings, detect lanes and potential obstacles. By writing custom code I programmed the robot to automatically steer, map its distance to avoid collisions and calibrates its sensors to filter out noise and false readings which may be disruptive to the movement of the car.
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 |Saadhana R | Emerald High | Mechanical Engineering | Incoming Junior
