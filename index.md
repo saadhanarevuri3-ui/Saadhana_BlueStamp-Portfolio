@@ -2,7 +2,7 @@
 Intially I started my experience at BlueStamp with a small-scale starter project called the Jitterbug, through this I learned how to feed solder, heat a joint and create solid electrical connections on a circuit board. Additionally I was exposed to different components like LEDs, switches, battery holders and a vibration motor. After gaining some experience with some basic engineering components I began with my chosen intensive project, the self driving car, which is essentially an autonomous scale vehicle controlled by an Arduino microcontroller. It utilizes LEDs and three different sensors, the line tracker, obstacle avoidance and ultrasonic to scan its surroundings, detect lanes and potential obstacles. By writing custom code I programmed the robot to automatically steer, map its distance to avoid collisions and calibrate its sensors to filter out noise and false readings which may be disruptive to the movement of the car.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
-|:--:|:--:|:--:|:--:|
+|:---:|:---:|:---:|:---:|
 | Saadhana R | Emerald High | Mechanical Engineering | Incoming Junior |
 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
