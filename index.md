@@ -48,6 +48,7 @@ Assembly and autonomy:
 - Some challenegs I've faced regard the line tracking sensor overheating, code malfunctioning causing the car to move abruptly and the car moving slowly due to the battery not providing sufficient power to the arduino and 2 DC motors
 - My plan to complete the project is to incorporate sensor fusion logic into my code, install a back camera to elevate my vehicle into a true smart car, implement speed adjustments using calibration to establish full control and start focusing on potential modifications 
 
+
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
