@@ -43,10 +43,7 @@ For your second milestone, explain what you've worked on since your previous mil
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Assembly and autonomy:
-- The self driving car uses a 9V battery to power its motors attached to the bottom as well as the arduino microcontroller, the obstacle avoidance and ultrasonic sensors are wired to the breadboard and pins on the arduino in order for it to function
-- So far, I have created the basic structure of the car, secured the motors and chassis and wired the two main sensors to the microcontroller and programmed the car to detect lanes, scan its surroundings and operate safely by avoiding collisions
-- Some challenegs I've faced regard the line tracking sensor overheating, code malfunctioning causing the car to move abruptly and the car moving slowly due to the battery not providing sufficient power to the arduino and 2 DC motors
-- My plan to complete the project is to incorporate sensor fusion logic into my code, install a back camera to elevate my vehicle into a true smart car, implement speed adjustments using calibration to establish full control and start focusing on potential modifications 
+The self driving car uses a 9V battery to power its motors attached to the bottom as well as the arduino microcontroller, the obstacle avoidance and ultrasonic sensors are wired to the breadboard and pins on the arduino in order for it to function. So far, I have created the basic structure of the car, secured the motors and chassis and wired the two main sensors to the microcontroller and programmed the car to detect lanes, scan its surroundings and operate safely by avoiding collisions. Some challenegs I've faced regard the line tracking sensor overheating, code malfunctioning causing the car to move abruptly and the car moving slowly due to the battery not providing sufficient power to the arduino and 2 DC motors. My plan to complete the project is to incorporate sensor fusion logic into my code, install a back camera to elevate my vehicle into a true smart car, implement speed adjustments using calibration to establish full control and start focusing on potential modifications.
 
 
 # Schematics 
@@ -73,8 +70,8 @@ Here's where you'll list the parts in your project. To add more rows, just copy 
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
 
 | **Part** | **Note** | **Price** | **Link** |
-|:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+
+| Controller Board (Arduino UNO) | Microcontroller/brain of the vehicle | $22 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
