@@ -71,7 +71,8 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 
-| Controller Board (Arduino UNO) | Microcontroller/brain of the vehicle | $22 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Controller Board (Arduino UNO) | Microcontroller/brain of the vehicle | $22 | [ https://www.amazon.com/Arduino-UNO-Minima-ABX00080-Connector/dp/B0C78K4CD4/ref=sr_1_9?crid=3CSXMT8R28H7R&dib=eyJ2IjoiMSJ9.fHcHTxEwj7lDGrApysBpHk8QzLINAYGbhDZ9uBCi-pM9wdH2GQTLBipWw6K1q3uOfWOvhlWoBTAJQ5XO2BmGLyghdwI_HRHs2ZwAHri2dlicJdkLxk1QXjIiRaCz3VYXqG_pxa1F859BNL-sqlL9XtdqsV_oH9XOuMt2dFZdtK6hpu3d-AHa_ZOyYs-IscWM10jy3nVRPVswH_4LXmiJFyDITRwxbM5_ntMuCZ-5nro.mWGkqKpOWCfp2dXuAHDUiachz8KveH14L4uT05ozeXY&dib_tag=se&keywords=arduino+microcontroller&qid=1784148851&sprefix=arduino+microcontroller+%2Caps%2C177&sr=8-9 ] |
+
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
