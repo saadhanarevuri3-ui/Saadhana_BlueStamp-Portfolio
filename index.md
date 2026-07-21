@@ -1,5 +1,5 @@
 # Self Driving Car
-Engineered and built a small-scale prototype 
+I engineered and built a small-scale prototype capable of real-time obstacle avoidance, lane changing and smart parking or garage docking. The car is powered by Arduino UNO and an ESP32 CAM, the system essentially integrates ultrasonic distance tracking, infrared proximity-sensing and line tracking logic to scan its surroundings and move accordingly.
 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
