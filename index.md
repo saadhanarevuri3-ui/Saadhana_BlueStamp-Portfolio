@@ -1,5 +1,5 @@
 # Self Driving Car
-Intially I started my experience at BlueStamp with a small-scale starter project called the Jitterbug, through this I learned how to feed solder, heat a joint and create solid electrical connections on a circuit board. Additionally I was exposed to different components like LEDs, switches, battery holders and a vibration motor. After gaining some experience with some basic engineering components I began with my chosen intensive project, the self driving car, which is essentially an autonomous scale vehicle controlled by an Arduino microcontroller. It utilizes LEDs and three different sensors, the line tracker, obstacle avoidance and ultrasonic to scan its surroundings, detect lanes and potential obstacles. By writing custom code I programmed the robot to automatically steer, map its distance to avoid collisions and calibrate its sensors to filter out noise and false readings which may be disruptive to the movement of the car.
+Engineered and built a small-scale prototype 
 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
@@ -26,16 +26,12 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 # Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Refine and Iterate
-- As of now for my second milestone I added three new features, to start I incorporated sensor fusion logic into my existing code for the three main sensors (IR, ultrasonic and line tracking) I had already built, this logic essentially combines data from these independent sensors to create one accurate and reliable view of the car's surroundings. In addition I attached two RGB LEDs by using double sided tape to keep them out of sight so that the ultrasonic or IR sensors don't detect them. This feature allows the prototype to look and feel more realistic, by equipping the car with headlights, the audience or reader will know what the car is thinking through the assortment of colors being displayed which are, red, blue, green and purple. Lastly I spent the majority of my allotted time for modifications working on coding a lane changing feature and successfully implementing it into the LED code so that they could work as indicators as the car is detecting the road and switching lanes. This specific modification was the most challenging because while coding it and redefining the motor and RGB pins, I encountered numerous errors which include repetition of pin numbers, incorrect pins altogether and motor issues making it difficult for the car to move as the wheel would frequently fall off completely or move significantly slower than the other. I overcame this challenge by making more detailed commentary onto my code for documentation purposes, while going through with this process it became easier to understand what source of energy was powering each of the columns on the breadboard and tracing them back to their selected pins. I made some adjustments to the analog and digital pins which allowed for better functioning motors which ultimately made the code simpler to understand. The most surprising factor about this experience has been how many factors can actually go wrong while buidling an arduino powered vehicle, the size of the breadboard I am using makes everything a bit more complicated because of the amount of connections taking place at the same time, the overcrowding of wires also often come in the way of the IR sensors and make creating schematics more difficult. All thats left to complete before the final milestone is installing and mounting the ESP32 CAM to create a garage docking feature, refined final code and if possible another small-scale modifcation just in time for demo night.
+Refine and Iterate:
+As of now for my second milestone I added three new features, to start I incorporated sensor fusion logic into my existing code for the three main sensors (IR, ultrasonic and line tracking) I had already built, this logic essentially combines data from these independent sensors to create one accurate and reliable view of the car's surroundings. In addition I attached two RGB LEDs by using double sided tape to keep them out of sight so that the ultrasonic or IR sensors don't detect them. This feature allows the prototype to look and feel more realistic, by equipping the car with headlights, the audience or reader will know what the car is thinking through the assortment of colors being displayed which are, red, blue, green and purple. Lastly I spent the majority of my allotted time for modifications working on coding a lane changing feature and successfully implementing it into the LED code so that they could work as indicators as the car is detecting the road and switching lanes. This specific modification was the most challenging because while coding it and redefining the motor and RGB pins, I encountered numerous errors which include repetition of pin numbers, incorrect pins altogether and motor issues making it difficult for the car to move as the wheel would frequently fall off completely or move significantly slower than the other. I overcame this challenge by making more detailed commentary onto my code for documentation purposes, while going through with this process it became easier to understand what source of energy was powering each of the columns on the breadboard and tracing them back to their selected pins. I made some adjustments to the analog and digital pins which allowed for better functioning motors which ultimately made the code simpler to understand. The most surprising factor about this experience has been how many factors can actually go wrong while buidling an arduino powered vehicle, the size of the breadboard I am using makes everything a bit more complicated because of the amount of connections taking place at the same time, the overcrowding of wires also often come in the way of the IR sensors and make creating schematics more difficult. All thats left to complete before the final milestone is installing and mounting the ESP32 CAM to create a garage docking feature, refined final code and if possible another small-scale modifcation just in time for demo night.
 
 # First Milestone
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -44,7 +40,12 @@ The self driving car uses a 9V battery to power its motors attached to the botto
 
 
 # Schematics 
+Motor driver:
 <img width="743" height="462" alt="Screenshot 2026-07-21 at 2 31 19 PM" src="https://github.com/user-attachments/assets/2c43065b-0d76-46d7-b950-2fc6a93747a9" />
+
+IR sensors:
+<img width="749" height="745" alt="Screenshot 2026-07-21 at 2 59 25 PM" src="https://github.com/user-attachments/assets/040f1791-0414-4ed1-9a3c-5d37e5b53fff" />
+
  
 
 # Code
