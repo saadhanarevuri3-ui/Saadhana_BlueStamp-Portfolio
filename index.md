@@ -88,13 +88,3 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Car chassis (Sunfounder Kit) | Main mounting platform | $8 |[https://www.amazon.com/SunFounder-Ultimate-Tutorials-Beginners-Enthusiasts/dp/B0CGJ235XN/ref=sr_1_2_sspa?crid=2X74H3K1NMXVA&keywords=car+chassis+from+sunfounder&qid=1784150435&sprefix=car+chassis+from+sunfounde%2Caps%2C139&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1]|
 | 9V Battery and clip cable | Portable power source | $4 | [https://www.amazon.com/PKCELL-Alkaline-9V-Detector-Batteries/dp/B0DG4QRJKQ/ref=sr_1_3_sspa?crid=1JALRZDVI4DBH&dib=eyJ2IjoiMSJ9.UTIEEJxrXzAacW7rXzP5baUO2v4AozDKVKm1_F2qlZHQ9hVteUKkel2la7e8OJUgaikzHh0dHlxqJbmWwF4VZwtJwmZD0QQTlisQcO7F_0ae2tTcY7W0_7NWs1p9548IwNEybt0lYddqBe9wztucsnXaGewAnErwssdUTeBfFZTztlB0YP-Cf-LcQOZgsBZlSoEiU_gvvOWXL3pLg1zp-7XYtY-8AVi5YYcckODXgMWX6UuAcru0lH39HzFiNWx-t1RSKrQ76S3ogAPm1R9AoTC3gr68fsC_hVxN0Yxjq3c.ZJpFVctMqKGLrhFPOZKaAcEtlhqpZyZuqHRdK9TDGDg&dib_tag=se&keywords=9V+battery&qid=1784150561&sprefix=9v+battery+%2Caps%2C181&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1] |
 | Jumper wires | Physical electrical connections | $2 | [https://www.amazon.com/WWZMDiB-120Pcs-Multicolored-Breadboard-Jumper/dp/B0B2L66ZFM/ref=sr_1_1_sspa?crid=1X65CJJW2TMHZ&dib=eyJ2IjoiMSJ9.I3nSspk5onl8Jong0G-0EaUV8k3yvkfNxu9EofYJ660_GAukluqKFTDs3FZ9XfRKGf2JDS-z84NqDSzLJ-WDAORU4znBSUEQeeaFqHWUsrCKMwH6q3pCBe0rts-vP06Mx53JRw5NW485BUAZ8cw9vI9jP1ThUOfMIMZ4eqjNVDbUX6Yep-H49NldtvjWZVAC1LCxP-YzbV7rskmRBbaTRNeTvV9zw-QjPVzqoJPZQos.9ZzrhVo1c-tKddZRj9hYr2B53wN0nk_WwewtlmUXxxM&dib_tag=se&keywords=jump+wires&qid=1784150611&sprefix=jump+wire%2Caps%2C174&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1] |
-
-
-
-# Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
-
-To watch the BSE tutorial on how to create a portfolio, click here.
