@@ -46,6 +46,8 @@ Motor driver:
 IR sensors:
 <img width="749" height="745" alt="Screenshot 2026-07-21 at 2 59 25 PM" src="https://github.com/user-attachments/assets/040f1791-0414-4ed1-9a3c-5d37e5b53fff" />
 
+LEDs (Headlights) and OLED display module:
+file:///var/folders/p3/1rx5p5cx51j9g53kvkwt_7dm0000gp/T/TemporaryItems/NSIRD_screencaptureui_PdAsFP/Screenshot%202026-07-27%20at%203.04.26%E2%80%AFPM.png
  
 
 # Code
