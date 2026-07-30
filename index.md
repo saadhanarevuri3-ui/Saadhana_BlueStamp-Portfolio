@@ -1,5 +1,5 @@
 # Self Driving Car
-I engineered and built a small-scale prototype capable of real-time obstacle avoidance, lane changing and smart parking or garage docking. The car is powered by Arduino UNO and an ESP32 CAM, the system essentially integrates ultrasonic distance tracking, infrared proximity-sensing and line tracking logic to scan its surroundings and move accordingly.
+I engineered and built a small-scale prototype capable of real-time obstacle avoidance and lane changing by using its headlights as indicators. The car is powered by an Arduino UNO board which powers the OLED Display module. The system essentially integrates ultrasonic distance tracking, infrared proximity-sensing and line tracking logic to scan its surroundings and move accordingly.
 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
@@ -26,17 +26,29 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 # Second Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=7EZxqqa1bf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Refine and Iterate:
-As of now for my second milestone I added three new features, to start I incorporated sensor fusion logic into my existing code for the three main sensors (IR, ultrasonic and line tracking) I had already built, this logic essentially combines data from these independent sensors to create one accurate and reliable view of the car's surroundings. In addition I attached two RGB LEDs by using double sided tape to keep them out of sight so that the ultrasonic or IR sensors don't detect them. This feature allows the prototype to look and feel more realistic, by equipping the car with headlights, the audience or reader will know what the car is thinking through the assortment of colors being displayed which are, red, blue, green and purple. Lastly I spent the majority of my allotted time for modifications working on coding a lane changing feature and successfully implementing it into the LED code so that they could work as indicators as the car is detecting the road and switching lanes. This specific modification was the most challenging because while coding it and redefining the motor and RGB pins, I encountered numerous errors which include repetition of pin numbers, incorrect pins altogether and motor issues making it difficult for the car to move as the wheel would frequently fall off completely or move significantly slower than the other. I overcame this challenge by making more detailed commentary onto my code for documentation purposes, while going through with this process it became easier to understand what source of energy was powering each of the columns on the breadboard and tracing them back to their selected pins. I made some adjustments to the analog and digital pins which allowed for better functioning motors which ultimately made the code simpler to understand. The most surprising factor about this experience has been how many factors can actually go wrong while buidling an arduino powered vehicle, the size of the breadboard I am using makes everything a bit more complicated because of the amount of connections taking place at the same time, the overcrowding of wires also often come in the way of the IR sensors and make creating schematics more difficult. All thats left to complete before the final milestone is installing and mounting the ESP32 CAM to create a garage docking feature, refined final code and if possible another small-scale modifcation just in time for demo night.
+Sensor Fusion and Motor Driver Optimization:
+For the second stage of my project I focused on implementing advances sensor logic which combines data from the different sensors to create one accurate and reliable view of the environment, and fine-tuning the vehicles driving behavior to ensure stable navigation. Initially, I incorporated sensor fusion logic into my existing code using three independent sensors, line tracking, infrared and ultrasonic. With this combined real-time data the car can track obstacle distance while simultaneously avoiding any objects it comes in close contact to laterally on the left and right, the code basically executes immediate swerving maneuvers or reversing. In addition, I installed LED headlights using electrical tape, positioning them carefully out of sight so they wouldn't interfere with the ultrasonic or IR sensors. In this part of the process I focused mainly on the hardware of the LEDs leaving the coding and building the circuit as a next step. While I initially experimented with a serial-controlled lane changing feature, I later diverted my time and energy towards perfecting the autonomous steering logic because real-time navigation proved more critical to the car's performance.
+
+Challenges:
+The most significant hurdles to overcome during this milestone were motor channel and direction mapping, within the code there were swaps between Motor A and Motor B as well as flipped pin direction configurations. These issues caused the car to twitch, move backward and even reverse when encountering obstacles instead of making smooth turns like it was programmed to. I also ran into friction and voltage issues where the two motors required drastically different power levels to spin at the same speed. I resolved this by implementing minimum PWM thresholds while constraining values to prevent overflowing of the 8-bit limit. Working on a smaller breadboard made wiring so many connections chaotic. The overcrowded jumper wires made it difficult to wire the RGB LEDs I had originally planned to since they not only took up space on the breadboard but there also weren't enough digital pins on the Arduino. To combat this challenge I resorted to using regular LEDs which had only two legs, the cathode and anode, this made the circuit much less complicated and took up only 4 pins on the breadboard. Due to the shortage of digital pins on the Arduino UNO board, I ended up using 2 analog pins to control the LEDs which leaves just enough room for my next step which includes installing and mounting an OLED Display Module which can be programmed and wired to show the car's status. 
+
+<img width="3024" height="4032" alt="IMG_3951" src="https://github.com/user-attachments/assets/4ee3a10e-715e-4e75-be60-53d15542f09d" />
+
+Lessons Learned:
+When adjusting the speeds of Motors A and B I realized that code logic that makes sense mathematically, such as setting a motor to 25% power doesn't actually translate to physical hardware. While testing the amount of volts being supplied to Motor A with a multimeter I found out that it was a battery issue since one motor had a higher voltage than the other. After replacing the battery I proceeded to strengthen the soldered connections on the slower motor by pressing one joint firmly until the wheel was spinning in perfect sync with the other. While troubleshooting it became clear that every motor has a minimum stall threshold that must be accounted for in software and hardware. As for the ultrasonic module, rapid sensor reads can cause severe issues in execution or jittery motor behavior. Timing loops ensure that sensors don't freeze or cause sudden changes in speed, so ultimately non-blocking logic is essential. Lastly, clean wire management isn't just about appearance, lose wires hanging over optical or IR sensors can introduce obstacles that are difficult to trace in code.
+
+<img width="3024" height="4032" alt="IMG_3952" src="https://github.com/user-attachments/assets/4ddb9d6e-b4ca-4bfe-a98c-81618808693d" />
 
 # First Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Assembly and autonomy:
-The self driving car uses a 9V battery to power its motors attached to the bottom as well as the arduino microcontroller, the obstacle avoidance and ultrasonic sensors are wired to the breadboard and pins on the arduino in order for it to function. So far, I have created the basic structure of the car, secured the motors and chassis and wired the two main sensors to the microcontroller and programmed the car to detect lanes, scan its surroundings and operate safely by avoiding collisions. Some challenegs I've faced regard the line tracking sensor overheating, code malfunctioning causing the car to move abruptly and the car moving slowly due to the battery not providing sufficient power to the arduino and 2 DC motors. My plan to complete the project is to incorporate sensor fusion logic into my code, install a back camera to elevate my vehicle into a true smart car, implement speed adjustments using calibration to establish full control and start focusing on potential modifications.
+The self driving car uses a 9V battery to power its motors attached to the bottom as well as the Arduino microcontroller, the obstacle avoidance and ultrasonic sensors are wired to the breadboard and pins on the Arduino in order for it to function. So far, I have created the basic structure of the car, secured the motors and chassis and wired the two main sensors to the microcontroller and programmed the car to detect lanes, scan its surroundings and operate safely by avoiding collisions. Some challenges I've faced regard the line tracking sensor overheating, code malfunctioning causing the car to move abruptly and the car moving slowly due to the battery not providing sufficient power to the Arduino and 2 DC motors. My plan to complete the project is to incorporate sensor fusion logic into my code, install a back camera to elevate my vehicle into a true smart car, implement speed adjustments using calibration to establish full control and start focusing on potential modifications.
+
+Challenges
 
 
 # Schematics 
@@ -47,24 +59,186 @@ IR sensors:
 <img width="749" height="745" alt="Screenshot 2026-07-21 at 2 59 25 PM" src="https://github.com/user-attachments/assets/040f1791-0414-4ed1-9a3c-5d37e5b53fff" />
 
 LEDs (Headlights) and OLED display module:
-file:///var/folders/p3/1rx5p5cx51j9g53kvkwt_7dm0000gp/T/TemporaryItems/NSIRD_screencaptureui_PdAsFP/Screenshot%202026-07-27%20at%203.04.26%E2%80%AFPM.png
+<img width="801" height="464" alt="Screenshot 2026-07-28 at 10 24 42 PM" src="https://github.com/user-attachments/assets/3f42fa15-84ec-483e-9ef6-ae4d50f457ac" />
  
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
 
-```c++
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
+#define OLED_RESET -1
+#define SCREEN_ADDRESS 0x3C
+
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+const int A_1B = 5;
+const int A_1A = 6;
+const int B_1B = 9;
+const int B_1A = 11;
+
+const int MOTOR_A_BOOST = 100;
+
+const int lineTrack = 2;
+const int echoPin   = 4;
+const int trigPin  = 12;
+const int rightIR  = 7;
+const int leftIR   = 8;
+
+const int leftHeadlight  = A3;
+const int rightHeadlight = A2;
+
+const int CRUISE_SPEED = 140;
+const int TRACK_SPEED  = 130;
+
+unsigned long lastDisplayTime = 0;
+const unsigned long DISPLAY_INTERVAL = 250;
+
+int getMotorASpeed(int baseSpeed) {
+  return constrain(baseSpeed + MOTOR_A_BOOST, 0, 255);
+}
+
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
-  Serial.println("Hello World!");
+
+  Wire.begin();
+  if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
+    for (;;);
+  }
+
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(10, 20);
+  display.println(F("SYSTEM READY"));
+  display.setCursor(10, 35);
+  display.println(F("SWERVE BALANCED"));
+  display.display();
+  delay(1000);
+
+  pinMode(A_1B, OUTPUT);
+  pinMode(A_1A, OUTPUT);
+  pinMode(B_1B, OUTPUT);
+  pinMode(B_1A, OUTPUT);
+
+  pinMode(lineTrack, INPUT);
+  pinMode(echoPin, INPUT);
+  pinMode(trigPin, OUTPUT);
+  pinMode(leftIR, INPUT);
+  pinMode(rightIR, INPUT);
+
+  pinMode(leftHeadlight, OUTPUT);
+  pinMode(rightHeadlight, OUTPUT);
+  digitalWrite(leftHeadlight, HIGH);
+  digitalWrite(rightHeadlight, HIGH);
+
+  stopMove();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  int leftObstacle  = digitalRead(leftIR);
+  int rightObstacle = digitalRead(rightIR);
+  float distance    = readSensorData();
 
+  if (millis() - lastDisplayTime >= DISPLAY_INTERVAL) {
+    lastDisplayTime = millis();
+    updateOLED(distance, leftObstacle, rightObstacle);
+  }
+
+  if (leftObstacle == LOW && rightObstacle == LOW) {
+    moveBackward(TRACK_SPEED);
+  }
+  else if (distance < 25.0 && distance > 2.0) {
+    stopMove();
+    delay(50);
+
+    unsigned long reverseStart = millis();
+    while (millis() - reverseStart < 400) {
+      moveBackward(TRACK_SPEED);
+    }
+
+    stopMove();
+    delay(50);
+
+    leftObstacle  = digitalRead(leftIR);
+    rightObstacle = digitalRead(rightIR);
+
+    if (leftObstacle == LOW) {
+      backLeft(TRACK_SPEED);
+    } else {
+      backRight(TRACK_SPEED);
+    }
+    delay(400);
+  }
+  else if (leftObstacle == LOW && rightObstacle == HIGH) {
+    backLeft(TRACK_SPEED);
+  }
+  else if (leftObstacle == HIGH && rightObstacle == LOW) {
+    backRight(TRACK_SPEED);
+  }
+  else {
+    moveForward(CRUISE_SPEED);
+  }
 }
-```
+
+void moveForward(int speed) {
+  analogWrite(A_1B, 0);
+  analogWrite(A_1A, getMotorASpeed(speed));
+  analogWrite(B_1B, 0);
+  analogWrite(B_1A, speed);
+}
+
+void moveBackward(int speed) {
+  analogWrite(A_1B, getMotorASpeed(speed));
+  analogWrite(A_1A, 0);
+  analogWrite(B_1B, speed);
+  analogWrite(B_1A, 0);
+}
+
+void backLeft(int speed) {
+  analogWrite(A_1B, 0);
+  analogWrite(A_1A, getMotorASpeed(25));
+  analogWrite(B_1B, 0);
+  analogWrite(B_1A, speed);
+}
+
+void backRight(int speed) {
+  analogWrite(A_1B, 0);
+  analogWrite(A_1A, getMotorASpeed(speed));
+  analogWrite(B_1B, 0);
+  analogWrite(B_1A, 80);
+}
+
+void stopMove() {
+  analogWrite(A_1B, 0);
+  analogWrite(A_1A, 0);
+  analogWrite(B_1B, 0);
+  analogWrite(B_1A, 0);
+}
+
+float readSensorData() {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  long duration = pulseIn(echoPin, HIGH, 18000);
+
+  if (duration == 0) {
+    return 999.0;
+  }
+
+  return duration / 58.00;
+}
+
+void updateOLED(float dist, int lIR, int rIR) {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(SSD1306_WHITE);
+  display.setCursor(10
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
